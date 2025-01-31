@@ -13,15 +13,11 @@
   - [Mobile Responsiveness](#8-mobile-responsiveness)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Project Architecture](#project-architecture)
 - [Data Sources](#data-sources)
 - [Testing](#testing)
 - [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
-
 
 ## Description
 
@@ -138,4 +134,130 @@ These client-facing components are designed specifically for the commercial real
 - Backend: Node.js, Express.js
 - Database: PostgreSQL
 - APIs: Google Maps API, Zillow API
+
+## Technologies Used
+The **RealEstateQuery** project leverages the following technologies to deliver a robust and scalable commercial real estate platform:
+
+- **Frontend:**
+  - React.js: For building a dynamic and responsive user interface.
+  - Tailwind CSS: For styling and ensuring a modern, mobile-first design.
+- **Backend:**
+  - Node.js: For handling server-side logic and API endpoints.
+  - Express.js: For creating RESTful APIs to interact with the frontend.
+- **Database:**
+  - PostgreSQL: For storing property data, user information, and analytics.
+- **APIs:**
+  - Google Maps API: For geolocation services and interactive maps.
+  - Zillow API (or similar): For accessing property data and market trends.
+- **Hosting Environment:**
+  - Ubuntu Linux Desktop: Hosting the application locally for development and testing.
+  - Nginx: As a reverse proxy to serve the application securely.
+- **Other Tools:**
+  - Docker (optional): For containerizing the application for easier deployment and scalability.
+  - Git/GitHub: For version control and collaboration.
+
+---
+
+## Usage
+Follow these steps to use the **RealEstateQuery** application after it is hosted on your Linux desktop:
+
+1. **Accessing the Application Locally:**
+   - Open a web browser on any device connected to your local network.
+   - Navigate to the IP address or hostname of the Linux desktop (e.g., `http://192.168.1.100`).
+
+2. **User Workflow:**
+   - **Investors/Brokers:** Log in or register to access advanced analytics dashboards, save searches, and manage inquiries.
+   - **Search Properties:** Use the search bar or filters to explore commercial properties for sale or lease.
+   - **View Property Details:** Click on a property to see detailed financial metrics, floor plans, and location insights.
+   - **Contact Brokers:** Use the contact form to inquire about specific properties or schedule site visits.
+
+3. **Admin Workflow (Optional):**
+   - Access admin tools (if implemented) for managing property listings, user accounts, or analytics data.
+
+---
+
+## Project Architecture
+The **RealEstateQuery** application follows a modular architecture designed for scalability and maintainability:
+
+- **Frontend:** 
+  - React.js components handle user interactions and render dynamic content.
+  - Communicates with backend APIs via HTTP requests.
+
+- **Backend:** 
+  - Built with Node.js and Express.js to handle business logic and serve data from the database.
+  - Exposes RESTful API endpoints for property data, user authentication, and analytics.
+
+- **Database:** 
+  - PostgreSQL stores structured data such as property listings, user profiles, saved searches, and financial metrics.
+
+- **Hosting Environment:** 
+  - The application is hosted on an Ubuntu Linux desktop using Nginx as a reverse proxy for secure access.
+
+- **APIs:** 
+  - Integrates external APIs (e.g., Google Maps API) for map visualizations and geolocation services.
+
+
+---
+
+## Data Sources
+The application relies on multiple data sources to provide comprehensive commercial real estate insights:
+
+1. **Google Maps API**:
+   - Provides geolocation services, interactive maps, and nearby points of interest.
+
+2. **Zillow API (or similar)**:
+   - Supplies property listings, pricing data, and market trends.
+
+3. **Internal Dataset**:
+   - Mock or real-world data for testing purposes, including historical transactions or financial metrics.
+
+4. **User Input**:
+   - Data from users such as saved searches, contact inquiries, or custom filters.
+
+---
+
+## Testing
+Testing ensures the reliability and functionality of the application across its components:
+
+1. **Unit Testing:**
+   - Backend APIs are tested using Jest to verify individual endpoints function correctly.
+   - Example: Test that property search filters return accurate results.
+
+2. **Integration Testing:**
+   - Cypress is used for end-to-end testing of interactions between frontend components and backend APIs.
+   - Example: Test that a search query from the frontend retrieves correct results from the database.
+
+3. **Manual Testing:**
+   - Perform manual tests on Linux-hosted instances to ensure responsiveness across devices (desktop/mobile).
+   - Example: Verify that maps load correctly on different browsers.
+
+4. **How to Run Tests:**
+  - ```{terminal}npm test```
+  - Or run integration tests with:
+  - ```{terminal}npx cypress open```
+---
+
+## Future Enhancements
+Planned improvements for future iterations of the project include:
+
+1. **Scalability Enhancements:**
+- Migrate hosting from a local Linux desktop to cloud platforms like AWS or DigitalOcean for broader accessibility.
+
+2. **Machine Learning Integration:**
+- Implement predictive analytics models to forecast market trends or property ROI based on historical data.
+
+3. **Enhanced User Features:**
+- Add support for multi-language localization to cater to international users.
+- Introduce collaborative tools for brokers (e.g., shared dashboards).
+
+4. **Improved Visualizations:**
+- Create heatmaps of market demand using advanced geospatial analysis tools.
+
+5. **Mobile App Development:**
+- Build a companion mobile app using React Native for users who prefer mobile-first experiences.
+
+6. **Security Enhancements:**
+- Implement HTTPS with SSL certificates via Nginx for secure communication.
+
+
 
