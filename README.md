@@ -1,5 +1,7 @@
 # RealEstateQuery
 
+![Alt text](Images/pexels-tracvu-5281414.jpg)
+
 ## Table of Contents
 - [Description](#description)
 - [Client Facing Components](#client-facing-components)
