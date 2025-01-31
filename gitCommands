@@ -1,0 +1,46 @@
+# Git Commands Cheat Sheet
+
+## BASIC SETUP
+git init                       # Initialize a new repository
+git config --global user.name "Your Name"   # Set user name
+git config --global user.email "you@example.com"   # Set user email
+
+## WORKING WITH FILES
+git status                     # Check status of files
+git add <filename>             # Stage specific file
+git add .                      # Stage all changes in current directory
+git commit -m "Commit message" # Commit changes with a message
+git diff                       # Show unstaged changes
+git diff --staged              # Show staged changes
+
+## BRANCH MANAGEMENT
+git branch <branch-name>       # Create a new branch
+git checkout <branch-name>     # Switch to an existing branch
+git checkout -b <branch-name>  # Create and switch to a new branch
+git branch                     # List local branches
+git branch -a                  # List local and remote branches
+git branch -d <branch-name>    # Delete merged branch
+git branch -D <branch-name>    # Force delete branch
+
+## REMOTE REPOSITORIES
+git clone <repository-url>     # Clone a repository
+git remote add origin <repository-url>   # Connect to remote repository
+git push origin <branch-name>  # Push commits to remote branch
+git push --all origin          # Push all branches
+git pull origin <branch-name>  # Fetch and merge updates from remote repository
+git fetch                      # Fetch updates without merging
+
+## MERGING AND REBASING
+git merge <branch-name>        # Merge branches
+git rebase <branch-name>       # Rebase branches
+
+## UNDOING CHANGES
+git reset HEAD <filename>      # Unstage files, keep changes in working directory
+git checkout -- <filename>     # Discard local changes to a file
+git reset --soft HEAD~1        # Remove last commit, keep changes staged
+git reset --hard HEAD~1        # Remove last commit and discard changes
+
+## VIEWING HISTORY
+git log                        # View full commit history
+git log --oneline              # View condensed commit history
+git show <commit-hash>         # View specific commit details
