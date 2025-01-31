@@ -86,11 +86,3 @@ A **Real Estate Property Finder with Demographic Insights** project is a powerfu
    
    - **User Experience**:  
      Striking the right balance between detailed information and a user-friendly interface is crucial. Allow users to customize what they see and control data layers for a streamlined experience.
-
-### Extensions and Monetization
-
-   - **Paid Features for Real Estate Agents**:  
-     Offer additional features, such as analytics on listing views, trends, and property recommendations, as a subscription model for agents.
-   
-   - **Premium Data Insights for Users**:  
-     Provide premium insights like detailed neighborhood analysis, commute time filters, or historical property value trends as part of a subscription or one-time fee.
