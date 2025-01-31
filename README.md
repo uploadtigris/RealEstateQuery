@@ -1,6 +1,6 @@
 # RealEstateQuery
 
-![Alt text](Images/pexels-tracvu-5281414.jpg)
+<img src="Images/pexels-tracvu-5281414.jpg" width="300">
 
 ## Table of Contents
 - [Description](#description)
