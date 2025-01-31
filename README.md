@@ -130,12 +130,6 @@ These client-facing components are designed specifically for the commercial real
 - User authentication for buyers, renters, and agents.
 
 ## Technologies Used
-- Frontend: React.js, Tailwind CSS
-- Backend: Node.js, Express.js
-- Database: PostgreSQL
-- APIs: Google Maps API, Zillow API
-
-## Technologies Used
 The **RealEstateQuery** project leverages the following technologies to deliver a robust and scalable commercial real estate platform:
 
 - **Frontend:**
