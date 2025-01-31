@@ -3,6 +3,14 @@
 ## Table of Contents
 - [Description](#description)
 - [Client Facing Components](#client-facing-components)
+  - [Homepage](#1-homepage)
+  - [Commercial Property Search and Filter](#2-commercial-property-search-and-filter)
+  - [Property Details Page](#3-property-details-page)
+  - [Interactive Map View](#4-interactive-map-view)
+  - [User Authentication and Profiles](#5-user-authentication-and-profiles)
+  - [Analytics Dashboard (Broker/Investor Tools)](#6-analytics-dashboard-brokerinvestor-tools)
+  - [Contact and Support Page](#7-contact-and-support-page)
+  - [Mobile Responsiveness](#8-mobile-responsiveness)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
@@ -13,6 +21,7 @@
 - [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
 - [License](#license)
+
 
 ## Description
 
