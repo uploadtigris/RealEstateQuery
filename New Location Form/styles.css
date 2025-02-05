@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Align labels and inputs */
+.form-group {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between label and input */
+    align-items: center; /* Align vertically */
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    width: 30%; /* Set label width */
+    text-align: right; /* Align label text to the right */
+    margin-right: 10px; /* Add spacing between label and input */
+}
+
+input, select, textarea {
+    width: 65%; /* Input fields take up remaining space */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+textarea {
+    resize: none; /* Disable resizing for consistent layout */
+}
+
+button {
+    width: 100%; /* Button spans full container width */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* Add padding for better appearance */
+    margin-top: 20px; /* Add spacing above button */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown styles for chain name suggestions */
+.dropdown {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+    margin-top: 0; /* Ensure no extra spacing above dropdown */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border styling */
+    max-height: 150px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable scrolling for long lists */
+    position: absolute; /* Position relative to parent container */
+    top: calc(100% + 5px); /* Position directly below input with small gap */
+    left: 0; /* Align with left edge of input field */
+    width: calc(100%); /* Match input field width */
+    background-color: white; /* White background for contrast */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: none; /* Initially hidden */
+}
+
+.dropdown li {
+    padding: 8px; /* Spacing around each item */
+    cursor: pointer; /* Pointer cursor for clickable items */
+}
+
+.dropdown li:hover {
+    background-color: #f0f0f0; /* Highlight item on hover */
+}
+
+
+

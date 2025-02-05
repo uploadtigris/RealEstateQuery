@@ -1,0 +1,3 @@
+index.html (submission) -> proposed_locations_updates
+proposed_locations_updates -> proposed_locations_database
+
